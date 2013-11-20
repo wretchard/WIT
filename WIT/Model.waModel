@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><EntityModelCatalog>
+	<extraProperties ____objectunic="true" version="1">
+		<classes ____objectunic="true">
+			<Agency ____objectunic="true" panelColor="#548DD4">
+				<panel ____objectunic="true" isOpen="false" pathVisible="true">
+					<position ____objectunic="true" X="60" Y="5"/>
+				</panel>
+			</Agency>
+			<Fee ____objectunic="true" panelColor="#BFBFBF">
+				<panel ____objectunic="true" isOpen="false" pathVisible="true">
+					<position ____objectunic="true" X="26" Y="396"/>
+				</panel>
+			</Fee>
+			<Invoice ____objectunic="true" panelColor="#E5B9B7">
+				<panel ____objectunic="true" isOpen="false" pathVisible="true">
+					<position ____objectunic="true" X="59" Y="85"/>
+				</panel>
+			</Invoice>
+			<Where ____objectunic="true" panelColor="#E5B9B7">
+				<panel ____objectunic="true" isOpen="false" pathVisible="true">
+					<position ____objectunic="true" X="138" Y="5"/>
+				</panel>
+			</Where>
+			<User ____objectunic="true" panelColor="#76923C">
+				<panel ____objectunic="true" isOpen="false" pathVisible="true">
+					<position ____objectunic="true" X="57" Y="37"/>
+				</panel>
+			</User>
+			<Speaker ____objectunic="true" panelColor="#CCC1D9">
+				<panel ____objectunic="true" isOpen="true" pathVisible="true">
+					<position ____objectunic="true" X="56" Y="5"/>
+				</panel>
+			</Speaker>
+			<TalentCategory ____objectunic="true" panelColor="#C3D69B">
+				<panel ____objectunic="true" isOpen="false" pathVisible="true">
+					<position ____objectunic="true" X="306" Y="339"/>
+				</panel>
+			</TalentCategory>
+			<Representation ____objectunic="true" panelColor="#eee">
+				<panel ____objectunic="true" isOpen="false" pathVisible="true">
+					<position ____objectunic="true" X="45" Y="25"/>
+				</panel>
+			</Representation>
+			<Pricing ____objectunic="true" panelColor="#70CCC2" note="xx">
+				<panel ____objectunic="true" pathVisible="true" isOpen="false">
+					<position ____objectunic="true" X="42" Y="42"/>
+				</panel>
+			</Pricing>
+			<AgencyPublic ____objectunic="true" panelColor="#C3D69B">
+				<panel ____objectunic="true" isOpen="false">
+					<position ____objectunic="true" X="51" Y="7"/>
+				</panel>
+			</AgencyPublic>
+			<AgencyReadOnly ____objectunic="true" panelColor="#C3D69B">
+				<panel ____objectunic="true" isOpen="false">
+					<position ____objectunic="true" X="86" Y="40"/>
+				</panel>
+			</AgencyReadOnly>
+			<SpeakerReadOnly ____objectunic="true" panelColor="#D8D8D8">
+				<panel ____objectunic="true" isOpen="false" pathVisible="true">
+					<position ____objectunic="true" X="117" Y="11"/>
+				</panel>
+			</SpeakerReadOnly>
+			<Resume ____objectunic="true" panelColor="#D88CFF">
+				<panel ____objectunic="true" isOpen="false" pathVisible="true">
+					<position ____objectunic="true" X="25" Y="20"/>
+				</panel>
+			</Resume>
+			<AppVersion ____objectunic="true" panelColor="#7F7F7F">
+				<panel ____objectunic="true" isOpen="false" pathVisible="true">
+					<position ____objectunic="true" X="25" Y="20"/>
+				</panel>
+			</AppVersion>
+			<ManagerCustom ____objectunic="true" panelColor="#4FA997">
+				<panel ____objectunic="true" isOpen="true" pathVisible="true">
+					<position ____objectunic="true" X="25" Y="20"/>
+				</panel>
+			</ManagerCustom>
+			<Custom ____objectunic="true" panelColor="#D7E3BC">
+				<panel ____objectunic="true" isOpen="false" pathVisible="true">
+					<position ____objectunic="true" X="25" Y="20"/>
+				</panel>
+			</Custom>
+		</classes>
+		<model ____objectunic="true" workspaceLeft="0" workspaceTop="0"/>
+	</extraProperties>
+	<dataClasses name="Agency" className="Agency" collectionName="Agencies" scope="publicOnServer">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+		<attributes name="agencyName" kind="storage" scope="public" type="string" indexKind="auto"/>
+		<attributes name="agencyEmail" kind="storage" scope="public" type="string" indexKind="auto"/>
+		<attributes name="invoices" kind="relatedEntities" scope="public" type="Invoices" reversePath="true" path="agent"/>
+		<attributes name="users" kind="relatedEntities" scope="public" type="Users" reversePath="true" path="agency"/>
+		<attributes name="HA1Key" kind="storage" scope="public" type="string"/>
+		<attributes name="password" kind="calculated" scope="public" type="string" scriptKind="javascript">
+			<onGet from="guidedModel.Agency.password.onGet"/>
+			<onSet from="guidedModel.Agency.password.onSet"/>
+		</attributes>
+		<attributes name="firstName" kind="storage" scope="public" type="string"/>
+		<attributes name="lastName" kind="storage" scope="public" type="string"/>
+		<attributes name="fullName" kind="calculated" scope="public" type="string" scriptKind="javascript">
+			<onGet from="guidedModel.Agency.fullName.onGet"/>
+		</attributes>
+		<attributes name="logo" kind="storage" scope="public" type="image"/>
+		<attributes name="url" kind="storage" scope="public" type="string"/>
+		<attributes name="description" kind="storage" scope="public" type="string"/>
+		<attributes name="plan" kind="relatedEntity" scope="public" type="Pricing" path="Pricing"/>
+		<attributes name="login" kind="storage" scope="public" type="string"/>
+		<attributes name="ad" kind="relatedEntity" scope="public" type="Representation" path="Representation"/>
+		<attributes name="talentCategories" kind="relatedEntities" scope="public" type="TalentCategories" reversePath="true" path="agency"/>
+		<attributes name="owner" kind="storage" scope="public" type="uuid" indexKind="auto"/>
+		<methods name="validatePassword" applyTo="entity" scope="publicOnServer" from="guidedModel.Agency.entityMethods.validatePassword"/>
+		<key name="ID"/>
+	</dataClasses>
+	<dataClasses name="AgencyPublic" className="AgencyPublic" collectionName="AgencyPublicCollection" scope="public" extends="Agency">
+		<events kind="onRestrictingQuery" from="guidedModel.AgencyPublic.events.onRestrictingQuery"/>
+		<methods name="changePassword" applyTo="dataClass" scope="public" from="guidedModel.AgencyPublic.methods.changePassword"/>
+		<methods name="newAgent" applyTo="dataClass" scope="public" from="guidedModel.AgencyPublic.methods.newAgent"/>
+	</dataClasses>
+	<dataClasses name="AgencyReadOnly" className="AgencyReadOnly" collectionName="AgencyReadOnlyCollection" scope="public" extends="Agency">
+		<attributes name="representations" kind="relatedEntities" scope="public" type="Representations" reversePath="true" path="agencyReadOnly"/>
+	</dataClasses>
+	<dataClasses name="AppVersion" className="AppVersion" collectionName="AppVersionCollection" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+		<attributes name="versionNumber" kind="storage" scope="public" type="number"/>
+		<attributes name="keyFeatures" kind="storage" scope="public" type="string"/>
+		<methods name="customObj" applyTo="dataClass" scope="public" from="guidedModel.AppVersion.methods.customObj"/>
+		<key name="ID"/>
+	</dataClasses>
+	<dataClasses name="Custom" className="Custom" collectionName="CustomCollection" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+		<attributes name="url" kind="storage" scope="public" type="string"/>
+		<attributes name="title" kind="storage" scope="public" type="string"/>
+		<key name="ID"/>
+	</dataClasses>
+	<dataClasses name="Fee" className="Fee" collectionName="Fees" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+		<attributes name="fee" kind="storage" scope="public" type="string"/>
+		<attributes name="activity" kind="storage" scope="public" type="string"/>
+		<attributes name="hours" kind="storage" scope="public" type="number"/>
+		<attributes name="fixedExpenses" kind="storage" scope="public" type="number"/>
+		<key name="ID"/>
+	</dataClasses>
+	<dataClasses name="Invoice" className="Invoice" collectionName="Invoices" scope="publicOnServer">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+		<attributes name="agent" kind="relatedEntity" scope="public" type="Agency" path="Agency"/>
+		<attributes name="itemDescripton" kind="storage" scope="public" type="string"/>
+		<attributes name="quantity" kind="storage" scope="public" type="number"/>
+		<attributes name="price" kind="storage" scope="public" type="number"/>
+		<attributes name="subTotal" kind="storage" scope="public" type="number"/>
+		<key name="ID"/>
+	</dataClasses>
+	<dataClasses name="Pricing" className="Pricing" collectionName="PricingCollection" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+		<attributes name="label" kind="storage" scope="public" not_null="true" type="string"/>
+		<attributes name="value" kind="storage" scope="public" not_null="true" type="number"/>
+		<key name="ID"/>
+	</dataClasses>
+	<dataClasses name="Representation" className="Representation" collectionName="Representations" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+		<attributes name="category" kind="storage" scope="public" type="string"/>
+		<attributes name="advertisedFee" kind="storage" scope="public" type="number"/>
+		<attributes name="suggestedFee" kind="storage" scope="public" type="number"/>
+		<attributes name="talentAskingFee" kind="storage" scope="public" type="number"/>
+		<attributes name="applicationDate" kind="storage" scope="public" type="date" simpleDate="false"/>
+		<attributes name="agencyReadOnly" kind="relatedEntity" scope="public" type="AgencyReadOnly" path="AgencyReadOnly"/>
+		<attributes name="speakerReadOnly" kind="relatedEntity" scope="public" type="SpeakerReadOnly" path="SpeakerReadOnly"/>
+		<attributes name="accepted" kind="storage" scope="public" type="bool"/>
+		<attributes name="confirmed" kind="storage" scope="public" type="bool"/>
+		<attributes name="unitMeasure" kind="storage" scope="public" type="string"/>
+		<attributes name="agencyName" kind="alias" scope="public" type="string" path="agencyReadOnly.agencyName"/>
+		<attributes name="agencyID" kind="alias" scope="public" type="uuid" path="agencyReadOnly.ID"/>
+		<attributes name="speakerID" kind="alias" scope="public" type="uuid" path="speakerReadOnly.ID"/>
+		<key name="ID"/>
+	</dataClasses>
+	<dataClasses name="Resume" className="Resume" collectionName="ResumeCollection" scope="publicOnServer">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+		<attributes name="resumeFile" kind="storage" scope="public" type="blob"/>
+		<key name="ID"/>
+	</dataClasses>
+	<dataClasses name="TalentCategory" className="TalentCategory" collectionName="TalentCategories" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+		<attributes name="category" kind="storage" scope="public" type="string"/>
+		<attributes name="fullDescription" kind="storage" scope="public" type="string"/>
+		<attributes name="advertisedFee" kind="storage" scope="public" type="number"/>
+		<attributes name="suggestedFee" kind="storage" scope="public" type="number"/>
+		<attributes name="unitMeasure" kind="storage" scope="public" type="string"/>
+		<attributes name="agency" kind="relatedEntity" scope="public" type="Agency" path="Agency"/>
+		<attributes name="agencyName" kind="alias" scope="public" type="string" path="agency.agencyName"/>
+		<key name="ID"/>
+	</dataClasses>
+	<dataClasses name="User" className="User" collectionName="Users" scope="publicOnServer">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+		<attributes name="login" kind="storage" scope="public" type="string"/>
+		<attributes name="HA1Key" kind="storage" scope="public" type="string"/>
+		<attributes name="password" kind="calculated" scope="public" type="string" scriptKind="javascript">
+			<onGet from="guidedModel.User.password.onGet"/>
+			<onSet from="guidedModel.User.password.onSet"/>
+		</attributes>
+		<attributes name="firstName" kind="storage" scope="public" type="string"/>
+		<attributes name="lastName" kind="storage" scope="public" type="string"/>
+		<attributes name="fullName" kind="calculated" scope="public" type="string" scriptKind="javascript">
+			<onGet from="guidedModel.User.fullName.onGet"/>
+		</attributes>
+		<attributes name="url" kind="storage" scope="public" type="string"/>
+		<attributes name="category" kind="storage" scope="public" type="string"/>
+		<attributes name="agency" kind="relatedEntity" scope="public" type="Agency" path="Agency"/>
+		<attributes name="applyTo" kind="storage" scope="public" type="string"/>
+		<attributes name="sessionFee" kind="storage" scope="public" type="string"/>
+		<attributes name="selfDescription" kind="storage" scope="public" type="string"/>
+		<attributes name="owner" kind="storage" scope="public" type="uuid"/>
+		<attributes name="eMail" kind="storage" scope="public" type="string"/>
+		<attributes name="role" kind="storage" scope="public" type="string"/>
+		<attributes name="companyName" kind="storage" scope="public" type="string"/>
+		<attributes name="picture" kind="storage" scope="public" type="image"/>
+		<attributes name="resume" kind="storage" scope="public" type="blob"/>
+		<attributes name="resumeName" kind="storage" scope="public" type="string"/>
+		<attributes name="grp" kind="storage" scope="public" type="string">
+			<events kind="onInit" from="guidedModel.User.grp.events.onInit"/>
+		</attributes>
+		<methods name="changePassword" applyTo="dataClass" scope="public" from="guidedModel.User.methods.changePassword"/>
+		<methods name="validatePassword" applyTo="entity" scope="publicOnServer" from="guidedModel.User.entityMethods.validatePassword"/>
+		<key name="ID"/>
+	</dataClasses>
+	<dataClasses name="Speaker" className="Speaker" collectionName="SpeakerCollection" scope="public" extends="User">
+		<attributes name="HA1Key" kind="storage" scope="public" type="string"/>
+		<events kind="onRestrictingQuery" from="guidedModel.Speaker.events.onRestrictingQuery"/>
+		<methods name="addAgency" applyTo="entity" scope="public" from="guidedModel.Speaker.entityMethods.addAgency"/>
+		<methods name="changePassword" applyTo="entity" scope="public">
+			<source>			</source>
+		</methods>
+		<methods name="getWhereObj" applyTo="dataClass" scope="public" from="guidedModel.Speaker.methods.getWhereObj"/>
+		<methods name="newUser" applyTo="dataClass" scope="public" from="guidedModel.Speaker.methods.newUser"/>
+	</dataClasses>
+	<dataClasses name="SpeakerReadOnly" className="SpeakerReadOnly" collectionName="SpeakerReadOnlyCollection" scope="public" extends="User">
+		<attributes name="representations" kind="relatedEntities" scope="public" type="Representations" reversePath="true" path="speakerReadOnly"/>
+	</dataClasses>
+	<dataClasses name="Where" className="Where" collectionName="WhereAbouts" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+		<attributes name="address" kind="storage" scope="public" type="string" indexKind="auto"/>
+		<attributes name="fromWhen" kind="storage" scope="public" type="date" simpleDate="false" indexKind="auto"/>
+		<attributes name="toWhen" kind="storage" scope="public" type="date" simpleDate="false" indexKind="auto"/>
+		<attributes name="street" kind="storage" scope="public" type="string" indexKind="auto"/>
+		<attributes name="city" kind="storage" scope="public" type="string"/>
+		<attributes name="country" kind="storage" scope="public" type="string"/>
+		<attributes name="speaker" kind="relatedEntity" scope="public" type="Speaker" path="Speaker"/>
+		<attributes name="agentName" kind="storage" scope="public" type="string"/>
+		<attributes name="agentEmail" kind="storage" scope="public" type="string"/>
+		<attributes name="category" kind="storage" scope="public" type="string" indexKind="auto"/>
+		<attributes name="fee_per_unit" kind="storage" scope="public" type="string"/>
+		<attributes name="descripton" kind="storage" scope="public" type="string"/>
+		<attributes name="speakerURL" kind="storage" scope="public" type="string"/>
+		<attributes name="agencyURL" kind="storage" scope="public" type="string"/>
+		<attributes name="speakerName" kind="storage" scope="public" type="string"/>
+		<attributes name="speakerDescription" kind="storage" scope="public" type="string"/>
+		<methods name="getCities" applyTo="dataClass" scope="public" from="guidedModel.Where.methods.getCities"/>
+		<key name="ID"/>
+	</dataClasses>
+</EntityModelCatalog>

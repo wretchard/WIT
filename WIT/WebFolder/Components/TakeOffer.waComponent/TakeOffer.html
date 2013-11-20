@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html><section data-group="[]">
+    <meta name="generator" content="Wakanda GUIDesigner"/>
+    <meta name="WAF.catalog" content="Speaker,Representation,AgencyReadOnly"/>
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Speaker" data-scope="local" data-lib="WAF" data-id="{id}speaker" data-dataType="string" data-autoLoad="true" content="speaker"/>
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Representation" data-scope="local" data-lib="WAF" data-id="{id}representation" data-dataType="string" data-autoLoad="true" content="representation"/>
+    <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="AgencyReadOnly" data-scope="local" data-lib="WAF" data-id="{id}agencyReadOnly" data-dataType="string" data-autoLoad="true" content="agencyReadOnly"/>
+    
+    
+    
+    
+    
+    
+    <button tabindex="1" id="{id}buttonCancel" data-type="button" data-text="Close" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-action="simple" class="waf-widget waf-button "></button>
+		<div id="{id}dataGridOffers" data-type="dataGrid" data-selection-mode="single" data-readOnly="true" data-lib="WAF" data-label-position="top" data-label="" data-footer-text="item(s)" data-footer-hide="true" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'category','colID':'category','width':'140','title':'Category'},{'sourceAttID':'suggestedFee','colID':'suggestedFee','width':'80','title':'Sugg%20%24'},{'sourceAttID':'talentAskingFee','colID':'talentAskingFee','width':'80','title':'Asking%20%24'},{'sourceAttID':'advertisedFee','colID':'advertisedFee','width':'80','title':'Advert%20%24'},{'sourceAttID':'applicationDate','colID':'applicationDate','width':'130','title':'Application%20Date'},{'sourceAttID':'accepted','colID':'accepted','width':'90','title':'Accepted'},{'sourceAttID':'confirmed','colID':'confirmed','width':'90','title':'Confirmed'}]" data-binding="{id}representation" class="waf-widget waf-dataGrid "></div>
+		<div id="{id}richTextRegister" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-left="true" data-autoWidth="false" class="waf-widget waf-richText ">Status: Offers from Agents</div>
+		<div id="{id}containerNegotiate" data-type="container" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-container waf-container-level-0 waf-level-0">
+ 		<div id="{id}richText3" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="{id}speaker.fullName" data-autoWidth="false" class="waf-widget waf-richText "></div>
+ 		<div id="{id}richText4" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="top" data-label="Session Fee" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="{id}representation.talentAskingFee" data-autoWidth="false" class="waf-widget waf-richText "></div>
+ 		<label id="{id}label2" for="{id}richText4" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-richText">Session Fee</label>
+ 		<button id="{id}buttonAccept" data-type="button" data-text="Accept this offer" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-action="simple" class="waf-widget waf-button "></button>
+ 		<button id="{id}buttonReject" data-type="button" data-text="Terminate Agent" data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-action="simple" class="waf-widget waf-button "></button>
+ 								<div id="{id}errBox" data-type="richText" data-lib="WAF" class="waf-widget waf-richText errorStyle" data-autoWidth="true" data-label="" data-label-position="left" data-target="_blank" data-overflow="Hidden" data-plainText="true" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false"></div>
+ 	</div>
+	
+	
+	
+	
+	
+			<div id="{id}container3" data-type="container" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-container waf-container-level-0 waf-level-0">
+ 		<div id="{id}richTextAgencyName" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="true" class="waf-widget waf-richText " data-binding="{id}agencyReadOnly.agencyName"></div>
+ 		<div id="{id}richText2" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="false" class="waf-widget waf-richText "></div>
+ 		<div id="{id}imageLogo" data-type="image" data-target="_blank" data-lib="WAF" data-label-position="top" data-label="" data-fit="0" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-image " data-binding="{id}agencyReadOnly.logo"></div>
+ 		<div id="{id}richTextAgencyEmail" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="true" class="waf-widget waf-richText " data-binding="{id}agencyReadOnly.agencyEmail"></div>
+ 		<div id="{id}richTextUrl" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="top" data-label="" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-autoWidth="true" class="waf-widget waf-richText " data-binding="{id}agencyReadOnly.url"></div>
+ 				<div id="{id}richTextDescription" data-type="richText" data-lib="WAF" class="waf-widget waf-richText " data-autoWidth="true" data-label="" data-label-position="left" data-target="_blank" data-overflow="Hidden" data-plainText="true" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-binding="{id}agencyReadOnly.description"></div>
+ 	</div>
+			<div id="{id}richText13" data-type="richText" data-target="_blank" data-plainText="true" data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label="" data-constraint-top="true" data-constraint-left="true" data-autoWidth="false" class="waf-widget waf-richText ">Acceptance/Rejection</div>
+	</section>

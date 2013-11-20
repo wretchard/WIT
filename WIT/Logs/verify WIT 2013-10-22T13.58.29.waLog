@@ -1,0 +1,178 @@
+Check bit tables for segment 1 on 1 elements
+End Check bit tables for segment 1
+Checking data table definitions on 9 elements
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+The UUIDs are the same
+End Checking data table definitions
+Checking chained list of deleted table definitions on 9 elements
+End Checking chained list of deleted table definitions
+Load data tables on 0 elements
+Checking data table headers on 9 elements
+End Checking data table headers
+Checking chained list of deleted data table headers on 9 elements
+End Checking chained list of deleted data table headers
+End 
+Checking BLOBs in table Agency on 0 elements
+End Checking BLOBs in table Agency
+Checking list of deleted BLOBs in table Agency on 0 elements
+End Checking list of deleted BLOBs in table Agency
+Checking records in table Agency on 0 elements
+End Checking records in table Agency
+Checking list of deleted records in table Agency on 0 elements
+End Checking list of deleted records in table Agency
+Checking BLOBs in table Fee on 0 elements
+End Checking BLOBs in table Fee
+Checking list of deleted BLOBs in table Fee on 0 elements
+End Checking list of deleted BLOBs in table Fee
+Checking records in table Fee on 0 elements
+End Checking records in table Fee
+Checking list of deleted records in table Fee on 0 elements
+End Checking list of deleted records in table Fee
+Checking BLOBs in table Invoice on 0 elements
+End Checking BLOBs in table Invoice
+Checking list of deleted BLOBs in table Invoice on 0 elements
+End Checking list of deleted BLOBs in table Invoice
+Checking records in table Invoice on 0 elements
+End Checking records in table Invoice
+Checking list of deleted records in table Invoice on 0 elements
+End Checking list of deleted records in table Invoice
+Checking BLOBs in table Pricing on 0 elements
+End Checking BLOBs in table Pricing
+Checking list of deleted BLOBs in table Pricing on 0 elements
+End Checking list of deleted BLOBs in table Pricing
+Checking records in table Pricing on 0 elements
+End Checking records in table Pricing
+Checking list of deleted records in table Pricing on 0 elements
+End Checking list of deleted records in table Pricing
+Checking BLOBs in table Representation on 0 elements
+End Checking BLOBs in table Representation
+Checking list of deleted BLOBs in table Representation on 0 elements
+End Checking list of deleted BLOBs in table Representation
+Checking records in table Representation on 0 elements
+End Checking records in table Representation
+Checking list of deleted records in table Representation on 0 elements
+End Checking list of deleted records in table Representation
+Checking BLOBs in table Resume on 0 elements
+End Checking BLOBs in table Resume
+Checking list of deleted BLOBs in table Resume on 0 elements
+End Checking list of deleted BLOBs in table Resume
+Checking records in table Resume on 0 elements
+End Checking records in table Resume
+Checking list of deleted records in table Resume on 0 elements
+End Checking list of deleted records in table Resume
+Checking BLOBs in table TalentCategory on 0 elements
+End Checking BLOBs in table TalentCategory
+Checking list of deleted BLOBs in table TalentCategory on 0 elements
+End Checking list of deleted BLOBs in table TalentCategory
+Checking records in table TalentCategory on 0 elements
+End Checking records in table TalentCategory
+Checking list of deleted records in table TalentCategory on 0 elements
+End Checking list of deleted records in table TalentCategory
+Checking BLOBs in table User on 0 elements
+End Checking BLOBs in table User
+Checking list of deleted BLOBs in table User on 0 elements
+End Checking list of deleted BLOBs in table User
+Checking records in table User on 0 elements
+End Checking records in table User
+Checking list of deleted records in table User on 0 elements
+End Checking list of deleted records in table User
+Checking BLOBs in table Where on 0 elements
+End Checking BLOBs in table Where
+Checking list of deleted BLOBs in table Where on 0 elements
+End Checking list of deleted BLOBs in table Where
+Checking records in table Where on 0 elements
+End Checking records in table Where
+Checking list of deleted records in table Where on 0 elements
+End Checking list of deleted records in table Where
+Scanning data on 65 elements
+End Scanning data
+91 errors found

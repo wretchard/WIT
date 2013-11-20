@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><permissions>
+	<allow type="module" resource="fieldChecker" action="executeFromClient"/>
+	<allow action="create" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Pricing" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="update" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Pricing" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="remove" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Pricing" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="describe" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Pricing" temporaryForcePermissions="false" type="dataClass"/>
+</permissions>

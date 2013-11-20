@@ -1,0 +1,104 @@
+2013-11-20 10:07:54 [com.wakanda-software.WIT] INFO - Users and groups directory opened
+2013-11-20 10:07:54 [com.wakanda-software.WIT.WIT] INFO - Datastore opened
+2013-11-20 10:07:54 [com.wakanda-software.WIT.WIT] INFO - "WIT" project opened
+2013-11-20 10:07:54 [com.wakanda-software.WIT.ServerAdmin] INFO - "ServerAdmin" project opened
+2013-11-20 10:07:54 [com.wakanda-software.WIT] INFO - "WIT" solution opened
+2013-11-20 10:07:54 [com.wakanda-software] INFO - Starts "WIT" solution
+2013-11-20 10:07:54 [com.wakanda-software.WIT.ServerAdmin] INFO - >buildInit()
+2013-11-20 10:07:54 [com.wakanda-software.WIT.ServerAdmin] INFO - >buildInit() - minified core files detected - try to add package definition to storage
+2013-11-20 10:07:54 [com.wakanda-software.WIT.ServerAdmin] INFO - >buildInit() - added package definition to storage
+2013-11-20 10:07:54 [com.wakanda-software.WIT.ServerAdmin] INFO - <buildInit()
+2013-11-20 10:07:54 [com.wakanda-software.WIT.ServerAdmin] INFO - HTTP Server started
+2013-11-20 10:07:54 [com.wakanda-software.WIT.ServerAdmin] INFO - "ServerAdmin" project started
+2013-11-20 10:07:54 [com.wakanda-software.WIT.WIT] INFO - >buildInit()
+2013-11-20 10:07:54 [com.wakanda-software.WIT.WIT] INFO - >buildInit() - minified core files detected - try to add package definition to storage
+2013-11-20 10:07:54 [com.wakanda-software.WIT.WIT] INFO - >buildInit() - added package definition to storage
+2013-11-20 10:07:54 [com.wakanda-software.WIT.WIT] INFO - <buildInit()
+2013-11-20 10:07:55 [com.wakanda-software.WIT.WIT] INFO - HTTP Server started
+2013-11-20 10:07:55 [com.wakanda-software.WIT.WIT] INFO - "WIT" project started
+2013-11-20 10:07:55 [com.wakanda-software.WIT.ServerAdmin] INFO - Executes the bootstrap file(s)
+2013-11-20 10:07:55 [com.wakanda-software.WIT.ServerAdmin] INFO - Bootstrap file(s) executed
+2013-11-20 10:07:55 [com.wakanda-software.WIT.WIT] INFO - Executes the bootstrap file(s)
+2013-11-20 10:07:55 [com.wakanda-software.WIT.WIT] INFO - Bootstrap file(s) executed
+2013-11-20 10:07:55 [com.wakanda-software.WIT] INFO - "WIT" solution started
+2013-11-20 10:07:55 [com.wakanda-software] INFO - "WIT" solution has been successfully opened for running (duration: 443 ms)
+2013-11-20 10:07:55 [com.wakanda-software.supervisor] INFO - solution opened
+2013-11-20 10:08:00 [com.wakanda-software.WIT.WIT] INFO - ==== CORE.MIN > core.min files already here ====
+2013-11-20 10:08:00 [com.wakanda-software.WIT.WIT] INFO - ==== CORE.MIN > core.min files already here ====
+2013-11-20 10:08:00 [com.wakanda-software.WIT.WIT] INFO - DEBUG : packageHasChanged  index.waPage/index.package.json   true
+2013-11-20 10:08:00 [com.wakanda-software.WIT.WIT] INFO - WPM.getPackageList() has been called
+2013-11-20 10:08:00 [com.wakanda-software.WIT.WIT] INFO - >packageListHelper.diffPackageListStorageVsWpm() - start
+2013-11-20 10:08:00 [com.wakanda-software.WIT.WIT] INFO - >>packageListHelper.diffPackageListStorageVsWpm() - creating result from WPM.getPackageList()
+2013-11-20 10:08:00 [com.wakanda-software.WIT.WIT] INFO - >> >packageListHelper.diffPackageListStorageVsWpm() - start adding packages from storage not found in WPM.getPackageList() to result
+2013-11-20 10:08:00 [com.wakanda-software.WIT.WIT] INFO - >> <packageListHelper.diffPackageListStorageVsWpm() - stop adding packages from storage not found in WPM.getPackageList() to result
+2013-11-20 10:08:00 [com.wakanda-software.WIT.WIT] INFO - <packageListHelper.diffPackageListStorageVsWpm() - stop
+2013-11-20 10:08:00 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/minifiedCoresWAF/desktop.core.min.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/icon/css/widget-icon.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/dataGrid/css/widget-dataGrid.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/label/css/widget-label.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/textField/css/widget-textField.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/image/css/widget-image.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/menuitem/css/widget-menuitem.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/menubar/css/widget-menubar.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/richText/css/widget-richText.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/container/css/widget-container.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/errorDiv/css/widget-errorDiv.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/radiogroup/css/widget-radiogroup.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/combobox/css/widget-combobox.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/button/css/widget-button.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/login/css/widget-login.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/component/css/widget-component.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/widget/googleMaps/css/widget-googleMaps.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /Components/Map.waComponent/Map.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /walib/WAF/themes/default/default.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /index.waPage/styles/index.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyCSS /application.css
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/minifiedCoresWAF/desktop.core.min.js
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/lib/raphael/raphael-min.js
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/icon/widget-icon.js
+2013-11-20 10:08:01 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/icon/widget-icon-conf.js
+2013-11-20 10:08:02 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/toolbar/widget-toolbar.js
+2013-11-20 10:08:02 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/dataGrid/widget-dataGrid.js
+2013-11-20 10:08:03 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/dataGrid/widget-dataGrid-conf.js
+2013-11-20 10:08:03 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/label/widget-label.js
+2013-11-20 10:08:03 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/label/widget-label-conf.js
+2013-11-20 10:08:03 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/textField/widget-textField.js
+2013-11-20 10:08:04 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/textField/widget-textField-conf.js
+2013-11-20 10:08:04 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/image/widget-image.js
+2013-11-20 10:08:04 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/image/widget-image-conf.js
+2013-11-20 10:08:04 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/menuitem/widget-menuitem.js
+2013-11-20 10:08:04 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/menuitem/widget-menuitem-conf.js
+2013-11-20 10:08:04 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/menubar/widget-menubar.js
+2013-11-20 10:08:04 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/menubar/widget-menubar-conf.js
+2013-11-20 10:08:05 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/richText/widget-richText.js
+2013-11-20 10:08:05 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/richText/widget-richText-conf.js
+2013-11-20 10:08:05 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/container/widget-container.js
+2013-11-20 10:08:05 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/container/widget-container-conf.js
+2013-11-20 10:08:05 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/errorDiv/widget-errorDiv.js
+2013-11-20 10:08:05 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/errorDiv/widget-errorDiv-conf.js
+2013-11-20 10:08:05 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/radiogroup/widget-radiogroup.js
+2013-11-20 10:08:06 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/radiogroup/widget-radiogroup-conf.js
+2013-11-20 10:08:06 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/combobox/widget-combobox.js
+2013-11-20 10:08:06 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/combobox/widget-combobox-conf.js
+2013-11-20 10:08:06 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/button/widget-button.js
+2013-11-20 10:08:06 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/button/widget-button-conf.js
+2013-11-20 10:08:06 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/login/widget-login.js
+2013-11-20 10:08:06 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/login/widget-login-conf.js
+2013-11-20 10:08:06 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/component/widget-component-conf.js
+2013-11-20 10:08:06 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/component/widget-component.js
+2013-11-20 10:08:06 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/googleMaps/widget-googleMaps.js
+2013-11-20 10:08:07 [com.wakanda-software.WIT.WIT] INFO - minifyJS /walib/WAF/widget/googleMaps/widget-googleMaps-conf.js
+2013-11-20 10:08:07 [com.wakanda-software.WIT.WIT] INFO - minifyJS /Components/Map.waComponent/Map.js
+2013-11-20 10:08:07 [com.wakanda-software.WIT.WIT] INFO - minifyJS /index.waPage/scripts/index.js
+2013-11-20 10:08:07 [com.wakanda-software.WIT.WIT] INFO - minifyHtml /Components/Map.waComponent/Map.html
+2013-11-20 10:08:07 [com.wakanda-software.WIT.WIT] INFO - builds made in 6505ms
+2013-11-20 10:08:07 [com.wakanda-software.WIT.WIT] INFO - DEBUG : packageHasChanged  index.waPage/index.package.json   false
+2013-11-20 10:08:07 [com.wakanda-software.WIT.WIT] INFO - builds made in 6ms
+2013-11-20 10:51:19 [com.wakanda-software] INFO - Stops "WIT" solution
+2013-11-20 10:51:20 [com.wakanda-software.WIT.WIT] INFO - "WIT" project stopped
+2013-11-20 10:51:21 [com.wakanda-software.WIT.ServerAdmin] INFO - "ServerAdmin" project stopped
+2013-11-20 10:51:21 [com.wakanda-software.WIT] INFO - "WIT" solution stopped
+2013-11-20 10:51:21 [com.wakanda-software] INFO - Closes "WIT" solution
+2013-11-20 10:51:22 [com.wakanda-software.WIT.WIT] INFO - "WIT" project closed
+2013-11-20 10:51:22 [com.wakanda-software.WIT.ServerAdmin] INFO - "ServerAdmin" project closed
+2013-11-20 10:51:22 [com.wakanda-software.WIT] INFO - "WIT" solution closed
