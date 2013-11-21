@@ -2,82 +2,24 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
-	var documentEvent = {};	// @document
+	var buttonApply = {};	// @button
+	var buttonHire = {};	// @button
 // @endregion// @endlock
 
 // eventHandlers// @lock
 
-	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
+	buttonApply.click = function buttonApply_click (event)// @startlock
 	{// @endlock
-		//get only the arrivals coming within a week;
-		//debugger;
-		var thisDay=new Date()
-		thisDay.setDate(thisDay.getDate())
-		var strToday=thisDay.toJSON();
-		thisDay.setDate(thisDay.getDate() + 8)
-		var strToWhen= thisDay.toJSON();
-		var s=strToday.slice(0,strToday.indexOf("T"))
-		var f=strToWhen.slice(0,strToWhen.indexOf("T"))
-		sources.where.query("toWhen > :1", s, {
-		onSuccess: function(event){}
-		}
-		) 
-		//debugger;
-		sources.objcustom=ds.AppVersion.customObj();
-		$$('richTextVersion').setValue(sources.objcustom.versionNumber.toFixed(1))
-		$$('richTextfeatures').setValue(sources.objcustom.versionDescription)
+		$$('componentMain').removeComponent()
+		$$('componentMain').loadComponent("/Components/AppWizard.waComponent");
+	};// @lock
+
+	buttonHire.click = function buttonHire_click (event)// @startlock
+	{// @endlock
 		
-		$('#dataGridWhere').hover(
-		function() {
-			$('#errorDiv1').html('Select a city');
-		},
-		
-		function() {
-			$('#errorDiv1').html('');
-		}
-		);
-		//map
-		$('#googleMaps1').hover(
-		function() {
-			$('#errorDiv1').html('Click the icons for detail');
-		},
-		
-		function() {
-			$('#errorDiv1').html('');
-		}
-		);	
-		//radio
-		$('#containerRadio').hover(
-		function() {
-			$('#errorDiv1').html('See arrivals in the future');
-		},
-		
-		function() {
-			$('#errorDiv1').html('');
-		}
-		);
-		//citysearchfield
-		$('#textFieldSearch').hover(
-		function() {
-			$('#errorDiv1').html('Enter a city to search');
-		},
-		
-		function() {
-			$('#errorDiv1').html('');
-		}
-		);
-		//combobox
-		$('#comboCategory').hover(
-		function() {
-			$('#errorDiv1').html('Choose a category to search');
-		},
-		
-		function() {
-			$('#errorDiv1').html('');
-		}
-		);
-		//load up the combo box
-		distinctValues()								
+		$$('componentMain').removeComponent()
+		$$('componentMain').loadComponent("/Components/Map.waComponent");
+
 	};// @lock
 
 function distinctValues() {
@@ -114,6 +56,7 @@ function searchCity(vCity) {
 var vPlace;
 
 // @region eventManager// @startlock
-	WAF.addListener("document", "onLoad", documentEvent.onLoad, "WAF");
+	WAF.addListener("buttonApply", "click", buttonApply.click, "WAF");
+	WAF.addListener("buttonHire", "click", buttonHire.click, "WAF");
 // @endregion
 };// @endlock

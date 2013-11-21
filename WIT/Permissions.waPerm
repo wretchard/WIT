@@ -4,4 +4,7 @@
 	<allow action="update" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Pricing" temporaryForcePermissions="false" type="dataClass"/>
 	<allow action="remove" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Pricing" temporaryForcePermissions="false" type="dataClass"/>
 	<allow action="describe" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Pricing" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="create" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Custom" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="update" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Custom" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="remove" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Custom" temporaryForcePermissions="false" type="dataClass"/>
 </permissions>

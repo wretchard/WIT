@@ -27,7 +27,7 @@
 				</panel>
 			</User>
 			<Speaker ____objectunic="true" panelColor="#CCC1D9">
-				<panel ____objectunic="true" isOpen="true" pathVisible="true">
+				<panel ____objectunic="true" isOpen="false" pathVisible="true">
 					<position ____objectunic="true" X="56" Y="5"/>
 				</panel>
 			</Speaker>
@@ -76,9 +76,9 @@
 					<position ____objectunic="true" X="25" Y="20"/>
 				</panel>
 			</ManagerCustom>
-			<Custom ____objectunic="true" panelColor="#D7E3BC">
+			<Custom ____objectunic="true" panelColor="#D7E3BC" note="controlled">
 				<panel ____objectunic="true" isOpen="false" pathVisible="true">
-					<position ____objectunic="true" X="25" Y="20"/>
+					<position ____objectunic="true" X="21" Y="11"/>
 				</panel>
 			</Custom>
 		</classes>

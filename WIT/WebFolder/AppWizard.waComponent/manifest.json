@@ -1,0 +1,6 @@
+{
+    "name"    : "AppWizard",    
+    "html"    : "AppWizard.html",
+    "styles"  : [],
+    "scripts" : ["AppWizard.js"]
+}

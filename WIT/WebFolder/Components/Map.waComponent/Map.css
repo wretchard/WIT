@@ -3,83 +3,95 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}checkbox1 {
+	 z-index: 12;
+	 width: 16px;
+	 height: 16px;
+	 top: 6px;
+	 left: 6px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}label3 {
+	 z-index: 12;
+	 width: 93px;
+	 height: 13px;
+	 top: 7.5px;
+	 left: 27px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}queryForm1 .waf-widget-header {
+	 color: rgb(115, 115, 115);
+	 
+}
+
+#{id}queryForm1 {
+	 z-index: 9;
+	 width: 588px;
+	 height: 236px;
+	 top: 95px;
+	 left: 204px;
+	
+	 position: absolute;
+	 color: rgb(0, 0, 0);
+	 
+}
+
+#{id}dataGrid5 {
+	 z-index: 7;
+	 width: 160px;
+	 height: 323px;
+	 top: 366px;
+	 left: 3px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dataGrid4 {
+	 z-index: 6;
+	 width: 160px;
+	 height: 325px;
+	 top: 33px;
+	 left: 4px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}googleMaps2 {
+	 z-index: 1;
+	 width: 652px;
+	 height: 325px;
+	 top: 33px;
+	 left: 174px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}buttonReset {
 	 width: 92px;
 	 height: 22px;
-	 top: 331px;
-	 left: 410px;
+	 top: 4px;
+	 left: 173px;
 	
 	 position: absolute;
 	 color: rgb(0, 0, 0);
 	 font-size: 11px;
-	 
-}
-
-#{id}comboCategory {
-	 width: 142px;
-	 height: 24px;
-	 top: 330px;
-	 left: 259px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label2 {
-	 width: 60px;
-	 height: 12px;
-	 top: 336px;
-	 left: 194px;
-	
-	 position: absolute;
-	 font-weight: bold;
-	 font-size: 11px;
-	 min-width: 60px;
-	 max-width: 100px;
-	 
-}
-
-#{id}label26 {
-	 width: 100px;
-	 height: 12px;
-	 top: 7px;
-	 left: 8px;
-	
-	 position: absolute;
-	 font-size: 11px;
-	 color: rgb(0, 0, 0);
-	 font-weight: bold;
-	 min-width: 100px;
-	 max-width: 150px;
-	 
-}
-
-#{id}radioGroupTime {
-	 width: 136px;
-	 height: 207px;
-	 top: 24px;
-	 left: 8px;
-	
-	 position: absolute;
-	 background-color: rgb(255, 255, 255);
-	 
-}
-
-#{id}containerRadio {
-	 width: 156px;
-	 height: 248px;
-	 top: 80px;
-	 left: 660px;
-	
-	 position: absolute;
 	 
 }
 
 #{id}errorDiv1 {
 	 width: 157px;
 	 height: 241px;
-	 top: 357px;
-	 left: 662px;
+	 top: 360px;
+	 left: 833px;
 	
 	 position: absolute;
 	 
@@ -376,70 +388,28 @@
 #{id}containerForm {
 	 width: 660px;
 	 height: 168px;
-	 top: 500px;
-	 left: 0px;
+	 top: 520px;
+	 left: 171px;
 	
 	 position: absolute;
-	 
-}
-
-#{id}textFieldSearch {
-	 width: 100px;
-	 height: 22px;
-	 top: 332px;
-	 left: 83px;
-	
-	 position: absolute;
-	 font-weight: normal;
-	 
-}
-
-#{id}label1 {
-	 width: 65px;
-	 height: 12px;
-	 top: 337px;
-	 left: 13px;
-	
-	 position: absolute;
-	 font-size: 11px;
-	 font-weight: bold;
-	 min-width: 65px;
-	 max-width: 85px;
 	 
 }
 
 #{id}dataGridWhere {
 	 width: 659px;
-	 height: 143px;
-	 top: 356px;
-	 left: 1px;
+	 height: 157px;
+	 top: 359px;
+	 left: 171px;
 	
 	 position: absolute;
 	 
 }
 
 #{id}dataGridWhere .waf-dataGrid-cell {
-	 font-size: 10px;
-	 color: rgb(0, 0, 0);
 	 
 }
 
 #{id}dataGridWhere .waf-dataGrid-row {
-	 font-size: 10px;
-	 
-}
-
-#{id}googleMaps1 {
-	 width: 656px;
-	 height: 324px;
-	 top: 0px;
-	 left: 0px;
-	
-	 position: absolute;
-	 -webkit-box-shadow: rgb(204, 204, 204) 0px 0px 0px 3px;
-	 -moz-box-shadow: rgb(204, 204, 204) 0px 0px 0px 3px;
-	 box-shadow: rgb(204, 204, 204) 0px 0px 0px 3px;
-	
 	 
 }
 

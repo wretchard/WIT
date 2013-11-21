@@ -1,1 +1,1 @@
-theUser=ds.User.all();
+theUser=ds.User.all().grp;
