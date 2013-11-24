@@ -27,13 +27,13 @@
 				</panel>
 			</User>
 			<Speaker ____objectunic="true" panelColor="#CCC1D9">
-				<panel ____objectunic="true" isOpen="false" pathVisible="true">
-					<position ____objectunic="true" X="56" Y="5"/>
+				<panel ____objectunic="true" isOpen="true" pathVisible="true">
+					<position ____objectunic="true" X="116" Y="5"/>
 				</panel>
 			</Speaker>
 			<TalentCategory ____objectunic="true" panelColor="#C3D69B">
-				<panel ____objectunic="true" isOpen="false" pathVisible="true">
-					<position ____objectunic="true" X="306" Y="339"/>
+				<panel ____objectunic="true" isOpen="true" pathVisible="true">
+					<position ____objectunic="true" X="439" Y="262"/>
 				</panel>
 			</TalentCategory>
 			<Representation ____objectunic="true" panelColor="#eee">
@@ -81,6 +81,11 @@
 					<position ____objectunic="true" X="21" Y="11"/>
 				</panel>
 			</Custom>
+			<TempRegister ____objectunic="true" panelColor="#CCC1D9">
+				<panel ____objectunic="true" isOpen="true" pathVisible="true">
+					<position ____objectunic="true" X="401" Y="5"/>
+				</panel>
+			</TempRegister>
 		</classes>
 		<model ____objectunic="true" workspaceLeft="0" workspaceTop="0"/>
 	</extraProperties>
@@ -178,7 +183,7 @@
 		<key name="ID"/>
 	</dataClasses>
 	<dataClasses name="TalentCategory" className="TalentCategory" collectionName="TalentCategories" scope="public">
-		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree" primKey="true"/>
 		<attributes name="category" kind="storage" scope="public" type="string"/>
 		<attributes name="fullDescription" kind="storage" scope="public" type="string"/>
 		<attributes name="advertisedFee" kind="storage" scope="public" type="number"/>
@@ -186,7 +191,16 @@
 		<attributes name="unitMeasure" kind="storage" scope="public" type="string"/>
 		<attributes name="agency" kind="relatedEntity" scope="public" type="Agency" path="Agency"/>
 		<attributes name="agencyName" kind="alias" scope="public" type="string" path="agency.agencyName"/>
-		<key name="ID"/>
+	</dataClasses>
+	<dataClasses name="TempRegister" className="TempRegister" collectionName="TempRegisterCollection" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree" primKey="true"/>
+		<attributes name="login" kind="storage" scope="public" type="string"/>
+		<attributes name="passclear" kind="storage" scope="public" type="string"/>
+		<attributes name="firstName" kind="storage" scope="public" type="string"/>
+		<attributes name="lastName" kind="storage" scope="public" type="string"/>
+		<attributes name="url" kind="storage" scope="public" type="string"/>
+		<attributes name="selfDescripton" kind="storage" scope="public" type="string"/>
+		<attributes name="eMail" kind="storage" scope="public" type="string"/>
 	</dataClasses>
 	<dataClasses name="User" className="User" collectionName="Users" scope="publicOnServer">
 		<attributes name="ID" kind="storage" scope="public" unique="true" autogenerate="true" type="uuid" indexKind="btree"/>

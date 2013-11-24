@@ -7,4 +7,8 @@
 	<allow action="create" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Custom" temporaryForcePermissions="false" type="dataClass"/>
 	<allow action="update" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Custom" temporaryForcePermissions="false" type="dataClass"/>
 	<allow action="remove" groupName="Manager" groupID="D8490A2E48D6C843B259E9C266B63FD3" resource="Model.Custom" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="create" groupName="Agent" groupID="2676DBD58B4E4345A65961555EB26D4D" resource="Model.TalentCategory" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="update" groupName="Agent" groupID="2676DBD58B4E4345A65961555EB26D4D" resource="Model.TalentCategory" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="remove" groupName="Agent" groupID="2676DBD58B4E4345A65961555EB26D4D" resource="Model.TalentCategory" temporaryForcePermissions="false" type="dataClass"/>
+	<allow action="describe" groupName="Agent" groupID="2676DBD58B4E4345A65961555EB26D4D" resource="Model.TalentCategory" temporaryForcePermissions="false" type="dataClass"/>
 </permissions>
